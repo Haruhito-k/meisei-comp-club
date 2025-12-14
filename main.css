@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+  background-color: #40BA8D;
+  font-family: "HG GothicE", sans-serif;
+  font-size: 3vw; /* ← 画面幅に応じて変わるサイズに！ */
+  margin: 0;
+  padding: 1em;
+}
+
+
+body {
+	font-size:30px;
+}
+body{
+	font-family: "HG GothicE",sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+}
+
+#news-section {
+  background-color: #DFF6E2;
+}
+
+#events-section {
+  background-color: #FDF3D1;
+}
+
+#overview-section {
+  background-color: #E3E8FD;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
