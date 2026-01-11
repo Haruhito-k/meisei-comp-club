@@ -16,7 +16,6 @@ section {
   padding: 2em;
   margin-bottom: 2em;
   border-radius: 10px;
-  scroll-margin-top: 100px;
 }
 
 #news-section {
@@ -138,3 +137,4 @@ h4[id],
 h5[id] {
   scroll-margin-top: 255px;
 }
+
