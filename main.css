@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+body {
+  background-color: #40BA8D;
+  font-family: "HG GothicE", sans-serif;
+  font-size: 3vw;
+  margin: 0;
+  padding: 1em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2em;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  scroll-margin-top: 163px;
+}
+
+#news {
+  background-color: #DFF6E2;
+}
+
+#events {
+  background-color: #FDF3D1;
+}
+
+#overview {
+  background-color: #E3E8FD;
+}
+
+#gallery {
+  background-color: #f0f8ff;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* スマホ用（画面幅が768px以下） */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 4vw;
+    padding: 1em;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    max-width: 90%;
+  }
+
+  section {
+    padding: 1em;
+  }
+}
+
+/* パソコン用（画面幅が769px以上） */
+@media screen and (min-width: 769px) {
+  body {
+    font-size: 20px;
+    padding: 2em 4em;
+  }
+
+  .gallery {
+    flex-direction: row;
+  }
+
+  .gallery img {
+    max-width: 250px;
+  }
+
+  section {
+    padding: 2em;
+  }
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffffcc; /* 半透明の白背景 */
+  backdrop-filter: blur(5px); /* 背景ぼかしで読みやすく */
+  z-index: 1000;
+  padding: 0.5em 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 0.5em;
+}
+
+.page-nav a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-nav a:hover {
+  text-decoration: underline;
+}
+
+/* --- メニューボタンの基本設定 --- */
+.menu-toggle {
+  display: none; /* 基本は隠す（PC用） */
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* --- スマホ用（画面幅が768px以下）の設定を更新 --- */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* スマホでは三本線ボタンを表示 */
+  }
+
+  .page-nav {
+    display: none; /* 最初はメニューを隠しておく */
+    flex-direction: column; /* リンクを縦に並べる */
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    top: 100%; /* ヘッダーのすぐ下に配置 */
+    left: 0;
+    padding: 1em 0;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.1);
+  }
+
+  /* JavaScriptで 'show' クラスが付いた時だけ表示 */
+  .page-nav.show {
+    display: flex;
+  }
+}
+
+/* --- パソコン用（画面幅が769px以上） --- */
+@media screen and (min-width: 769px) {
+  .page-nav {
+    display: flex !important; /* PCでは常に表示 */
+  }
+}
+
+  /* JavaScriptで 'show' クラスが付いた時だけ表示 */
+  .page-nav.show {
+    display: flex;
+  }
+}
+
+/* --- パソコン用（画面幅が769px以上） --- */
+@media screen and (min-width: 769px) {
+  .page-nav {
+    display: flex !important; /* PCでは常に表示 */
+  }
+}
