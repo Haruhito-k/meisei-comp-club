@@ -22,6 +22,9 @@ section {
 #news {
   background-color: #DFF6E2;
 }
+#for-biggners {
+  background-color: #DEF6E9;
+}
 
 #events {
   background-color: #FDF3D1;
@@ -185,6 +188,7 @@ header {
     display: flex !important; /* PCでは常に表示 */
   }
 }
+
 
 
 
