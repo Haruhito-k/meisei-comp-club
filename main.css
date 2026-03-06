@@ -162,3 +162,27 @@ a:hover {
     box-shadow: none;
   }
 }
+/* フェードインアニメーション */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* キャッチコピーにアニメーションを適用 */
+.catchphrase {
+  font-size: 2.2em;
+  text-align: center;
+  margin: 2em 0 1em;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+
