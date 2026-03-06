@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* ベーススタイル */
 body {
   background-color: #f9f9f9;
   font-family: 'Kiwi Maru', serif;
@@ -10,11 +11,13 @@ body {
   padding: 0;
 }
 
+/* ヘッダー */
 header {
   text-align: center;
   padding: 2em 1em 1em;
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
+  position: relative;
 }
 
 h1 {
@@ -22,6 +25,7 @@ h1 {
   margin: 0;
 }
 
+/* キャッチコピー */
 .catchphrase {
   font-size: 2.2em;
   text-align: center;
@@ -29,12 +33,7 @@ h1 {
   color: #333;
 }
 
-.section-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
+/* セクション共通 */
 section {
   background-color: #ffffff;
   border-radius: 12px;
@@ -44,6 +43,14 @@ section {
   max-width: 900px;
 }
 
+/* セクションタイトル */
+.section-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/* ギャラリー */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -59,6 +66,7 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* リンク */
 a {
   color: #0077cc;
   text-decoration: none;
@@ -66,6 +74,39 @@ a {
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+/* ハンバーガーメニュー */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  color: #0077cc;
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+}
+
+/* ナビゲーション */
+.page-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.page-nav a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-nav a:hover {
   text-decoration: underline;
 }
 
@@ -89,38 +130,7 @@ a:hover {
   .gallery img {
     max-width: 90%;
   }
-}
 
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  padding: 0.5em 1em;
-  color: #0077cc;
-}
-
-.page-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-  margin-top: 1em;
-}
-
-.page-nav a {
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.page-nav a:hover {
-  text-decoration: underline;
-}
-
-/* スマホ用 */
-@media screen and (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
@@ -143,6 +153,8 @@ a:hover {
     display: flex;
   }
 }
+
+/* PC表示時のナビゲーション */
 @media screen and (min-width: 769px) {
   .page-nav {
     display: flex !important;
@@ -150,5 +162,3 @@ a:hover {
     box-shadow: none;
   }
 }
-
-
