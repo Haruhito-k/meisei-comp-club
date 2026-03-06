@@ -1,100 +1,105 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サンプルページ</title>
-    <link href="main.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>サンプルページ</title>
+  <link href="main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+  <style>
+    .catchphrase {
+      font-family: 'Kiwi Maru', serif;
+      font-size: 2.5em;
+      text-align: center;
+      margin: 1em 0;
+      color: #333;
+    }
+    .section-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  </style>
 </head>
 
+<body>
+  <header>
+    <h1>大阪明星学園　コンピューター研究部</h1>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="page-nav">
+      <a href="#news">近況</a>
+      <a href="#for-beginners">入部を検討している人へ</a>
+      <a href="#events">年間行事</a>
+      <a href="#overview">クラブ概要</a>
+      <a href="#gallery">活動ギャラリー</a>
+    </nav>
+  </header>
 
- <body>
-   <header>
-  <h1>大阪明星学園　コンピューター研究部</h1>
-  <h2 class="catchphrase">好きを作品に</h2> <!-- 追加 -->
-  <button class="menu-toggle" aria-label="メニューを開く">☰</button>
-  <nav class="page-nav">
-    <a href="#news">近況</a>
-    <a href="#for-beginners">入部を検討している人へ</a>
-    <a href="#events">年間行事</a>
-    <a href="#overview">クラブ概要</a>
-    <a href="#gallery">活動ギャラリー</a>
-  </nav>
-</header>
+  <section id="catchphrase">
+    <h2 class="catchphrase">好きを作品に</h2>
+  </section>
 
-
-    <section id="news">
-    <h2>近況</h2>
+  <section id="news">
+    <h3>近況</h3>
     <p><strong>２０２５年度</strong></p>
     <p>部員が10人以上増えました！</p>
-    <p></p>
     <p>2026年度の学園祭に向けて作品作成やブラッシュアップに励んでいます！</p>
-    </section>
+  </section>
 
-    <section id="for-biggners">
-        <h3>初心者だけどいいのかな？と思ったなら</h3>
-        <p><strong>パソコンに慣れてない人もたくさんいます</strong></p>
-        <p>プログラミングが未経験の人が入部するのは珍しくないです。</p>
-        <p>"Scratch"を用いるだけでも幅広いバリエーションのゲームが作れます</p>        
+  <section id="for-biggners">
+    <h4>初心者だけどいいのかな？と思ったなら</h4>
+    <p><strong>パソコンに慣れてない人もたくさんいます</strong></p>
+    <p>プログラミングが未経験の人が入部するのは珍しくないです。</p>
+    <p>"Scratch"を用いるだけでも幅広いバリエーションのゲームが作れます</p>        
 
-         <div style="margin-top: 1.5em;">
-        <p>最初は 先輩のゲームを遊びまくります！</p>
-             <ul>
-                 <li>そして自分が興味を持った作品を参考にして自分ながらの作品を作ろう！</li>
-            </ul>
-　　　　　</section>       
-     
-    <section id="events">
-    <h4>年間行事</h4>
+    <div style="margin-top: 1.5em;">
+      <p>最初は 先輩のゲームを遊びまくります！</p>
+      <ul>
+        <li>そして自分が興味を持った作品を参考にして自分ながらの作品を作ろう！</li>
+      </ul>
+    </div>
+  </section>       
+
+  <section id="events">
+    <h5>年間行事</h5>
     <ul>
-        <li>６月：仮入部開始</li>
-        <li>９月：本入部開始</li>
-        <li>　　　学園祭開催</li>
+      <li>６月：仮入部開始</li>
+      <li>９月：本入部開始</li>
+      <li>　　　学園祭開催</li>
     </ul>
-    </section>
+  </section>
 
-    <section id="overview">
-    <h5>クラブ概要</h5>
+  <section id="overview">
+    <h6>クラブ概要</h6>
     <p>2025年度</p>
-    <p></p>
     <p>顧問</p>
-        <p>廣島先生　吉良先生　茶畑先生</p>
-    <p>活動日
-        <p>毎週月曜日、金曜日（祝日、試験１週間前を除く）</p>
-        <p>放課後６時まで</p>
-    <p></p>
+    <p>廣島先生　吉良先生　茶畑先生</p>
+    <p>活動日</p>
+    <p>毎週月曜日、金曜日（祝日、試験１週間前を除く）</p>
+    <p>放課後６時まで</p>
     <p><a href="https://www.meisei.ed.jp/" target="_blank">大阪明星学園・明星中学校HP</a></p>
     <p><a href="https://twitter.com/meisei_shinshi" target="_blank">明星中学校公式X</a></p>
     <p><a href="https://www.instagram.com/osaka_meisei_gakuen/" target="_blank">明星中学校公式Instaglam</a></p>
-    </section>
+  </section>
 
-    <section id="gallery">
-    <h6>活動ギャラリー</h6>
+  <section id="gallery">
+    <p class="section-title">活動ギャラリー</p>
     <div class="gallery">
-    <p><strong>活動場所</strong></p>
-    <p><strong>南館6F コンピューター教室</strong></p>
-    <img src="clubroom_map_v2.png" alt="S605 コンピューター教室">
-    <img src="photo2.jpg" alt="活動の様子2">
-    <img src="photo3.jpg" alt="活動の様子3">
+      <p><strong>活動場所</strong></p>
+      <p><strong>南館6F コンピューター教室</strong></p>
+      <img src="clubroom_map_v2.png" alt="S605 コンピューター教室">
+      <img src="photo2.jpg" alt="活動の様子2">
+      <img src="photo3.jpg" alt="活動の様子3">
     </div>
-    </section>
+  </section>
 
-    <script>
-      const toggleButton = document.querySelector('.menu-toggle');
-      const nav = document.querySelector('.page-nav');
+  <script>
+    const toggleButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.page-nav');
 
-      toggleButton.addEventListener('click', () => {
-        nav.classList.toggle('show');
-       });
-      </script>
-    </body>
+    toggleButton.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
 </html>
-
-
-
-
-
-
-
-
