@@ -124,6 +124,24 @@ a:hover {
     padding: 1em;
   }
 
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1 {
+    font-size: 1.4em;
+    text-align: left;
+    margin-bottom: 0.5em;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: static; /* ← ここを変更！ */
+    align-self: flex-end; /* 右寄せにする */
+    margin-bottom: 1em;
+  }
+
   section {
     padding: 2em 1em;
     margin: 2em 0;
@@ -136,10 +154,6 @@ a:hover {
 
   .gallery img {
     max-width: 90%;
-  }
-
-  .menu-toggle {
-    display: block;
   }
 
   .page-nav {
@@ -191,6 +205,7 @@ a:hover {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 0.3s;
 }
+
 
 
 
