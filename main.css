@@ -1,10 +1,16 @@
 @charset "utf-8";
 
-.kiwi-maru-regular {
-  font-family: "Kiwi Maru", serif;
-  font-weight: 400;
-  font-style: normal;
+.catchphrase {
+  font-family: 'Kiwi Maru', serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0.2em 0 0.8em;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
+
 
 body {
   background-color: #40BA8D;
@@ -194,6 +200,7 @@ header {
     display: flex !important; /* PCでは常に表示 */
   }
 }
+
 
 
 
