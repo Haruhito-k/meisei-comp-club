@@ -143,3 +143,12 @@ a:hover {
     display: flex;
   }
 }
+@media screen and (min-width: 769px) {
+  .page-nav {
+    display: flex !important;
+    position: static;
+    box-shadow: none;
+  }
+}
+
+
