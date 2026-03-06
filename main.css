@@ -1,3 +1,96 @@
+@charset "utf-8";
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Kiwi Maru', serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2em 1em 1em;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.catchphrase {
+  font-size: 2.2em;
+  text-align: center;
+  margin: 2em 0 1em;
+  color: #333;
+}
+
+.section-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+section {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 3em 2em;
+  margin: 3em auto;
+  max-width: 900px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  section {
+    padding: 2em 1em;
+    margin: 2em 0;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery img {
+    max-width: 90%;
+  }
+}
+
 .menu-toggle {
   display: none;
   background: none;
