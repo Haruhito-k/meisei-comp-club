@@ -17,8 +17,9 @@ header {
   padding: 2em 1em 1em;
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
-  position: relative;
+  position: relative; 
 }
+
 
 h1 {
   font-size: 2em;
@@ -89,7 +90,9 @@ a:hover {
   position: absolute;
   top: 1.5em;
   right: 1em;
+  z-index: 1001;
 }
+
 
 /* ナビゲーション */
 .page-nav {
@@ -184,5 +187,6 @@ a:hover {
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 0.3s;
 }
+
 
 
