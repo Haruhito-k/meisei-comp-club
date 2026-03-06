@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-<header>
-  <h1>大阪明星学園　コンピューター研究部</h1>
-  <button class="menu-toggle" aria-label="メニューを開く">☰</button>
-  <nav class="page-nav">
-    <a href="#news">近況</a>
-    <a href="#for-beginners">入部を検討している人へ</a>
-    <a href="#events">年間行事</a>
-    <a href="#overview">クラブ概要</a>
-    <a href="#gallery">活動ギャラリー</a>
-  </nav>
-</header>
-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>大阪明星学園 コンピューター研究部</title>
+  <link href="main.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet" />
+</head>
 
 <body>
   <header>
     <h1>大阪明星学園　コンピューター研究部</h1>
+    <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+    <nav class="page-nav">
+      <a href="#news">近況</a>
+      <a href="#for-beginners">入部を検討している人へ</a>
+      <a href="#events">年間行事</a>
+      <a href="#overview">クラブ概要</a>
+      <a href="#gallery">活動ギャラリー</a>
+    </nav>
   </header>
 
   <section id="catchphrase">
@@ -72,16 +75,14 @@
       <img src="photo3.jpg" alt="活動の様子3" />
     </div>
   </section>
-</body>
+
   <script>
-  const toggleButton = document.querySelector('.menu-toggle');
-  const nav = document.querySelector('.page-nav');
+    const toggleButton = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.page-nav');
 
-  toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('show');
-  });
-</script>
-
+    toggleButton.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    });
+  </script>
+</body>
 </html>
-
-
