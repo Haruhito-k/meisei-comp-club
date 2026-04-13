@@ -85,14 +85,14 @@ a:hover {
 
 /* ハンバーガーメニュー */
 .menu-toggle {
-  display: block;
+  display: block !important;
   background: none;
   border: none;
   font-size: 28px;
   cursor: pointer;
   padding: 0.5em 1em;
   color: #0077cc;
-  position: fixed;
+  position: fixed !important;
   top: 1em;
   right: 1em;
   z-index: 1001;
