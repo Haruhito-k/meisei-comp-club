@@ -17,8 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 1.5em 1em 1em;
-  padding-top: 4em; /* ← メニューの高さ分の余白を追加 */
+  padding: 4em 1em 1em; /* 上に余白を追加してメニューと重ならないように */
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   position: relative;
@@ -37,6 +36,9 @@ header h1 {
   text-align: center;
   margin: 2em 0 1em;
   color: #333;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 /* セクション共通 */
@@ -83,21 +85,20 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ハンバーガーメニュー */
+/* ハンバーガーメニュー（常に右上に固定） */
 .menu-toggle {
-  display: block !important;
+  display: block;
   background: none;
   border: none;
   font-size: 28px;
   cursor: pointer;
   padding: 0.5em 1em;
   color: #0077cc;
-  position: fixed !important;
+  position: fixed;
   top: 1em;
   right: 1em;
   z-index: 1001;
 }
-
 
 /* ナビゲーション */
 .page-nav {
@@ -134,13 +135,6 @@ a:hover {
     font-size: 1.4em;
     text-align: left;
     margin-bottom: 0.5em;
-  }
-
-  .menu-toggle {
-    display: block;
-    position: static; /* ← ここを変更！ */
-    align-self: flex-end; /* 右寄せにする */
-    margin-bottom: 1em;
   }
 
   section {
@@ -184,6 +178,7 @@ a:hover {
     box-shadow: none;
   }
 }
+
 /* フェードインアニメーション */
 @keyframes fadeIn {
   from {
@@ -195,19 +190,3 @@ a:hover {
     transform: translateY(0);
   }
 }
-
-/* キャッチコピーにアニメーションを適用 */
-.catchphrase {
-  font-size: 2.2em;
-  text-align: center;
-  margin: 2em 0 1em;
-  color: #333;
-  opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
-  animation-delay: 0.3s;
-}
-
-
-
-
-
