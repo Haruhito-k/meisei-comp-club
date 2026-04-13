@@ -91,7 +91,7 @@ a:hover {
   cursor: pointer;
   padding: 0.5em 1em;
   color: #0077cc;
-  position: absolute;
+  position: fixed;
   top: 1.5em;
   right: 1em;
   z-index: 1001;
