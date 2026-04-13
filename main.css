@@ -18,6 +18,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
   padding: 1.5em 1em 1em;
+  padding-top: 4em; /* ← メニューの高さ分の余白を追加 */
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   position: relative;
