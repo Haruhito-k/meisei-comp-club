@@ -168,6 +168,10 @@ a:hover {
   .page-nav.show {
     display: flex;
   }
+
+  .sp-only {
+    display: inline;
+  }
 }
 
 /* PC表示時のナビゲーション */
@@ -176,6 +180,10 @@ a:hover {
     display: flex !important;
     position: static;
     box-shadow: none;
+  }
+
+  .sp-only {
+    display: none;
   }
 }
 
@@ -189,4 +197,9 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* スマホ専用の改行（デフォルトでは非表示） */
+.sp-only {
+  display: none;
 }
