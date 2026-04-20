@@ -161,7 +161,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: auto;
-    padding-top: 4em 0 1em;
+    padding: 4em 0 1em;
     z-index: 1000;
   }
 
@@ -171,7 +171,7 @@ a:hover {
 
   .page-nav a {
     color:#0077cc;
-    front-size:1.2em;
+    font-size:1.2em;
     padding:0.5em 0;
   }
 
