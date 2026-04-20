@@ -91,14 +91,23 @@
 </section>
 
 
-  <script>
-    const toggleButton = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('.page-nav');
+ <script>
+  const toggleButton = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.page-nav');
+  const navLinks = document.querySelectorAll('.page-nav a');
 
-    toggleButton.addEventListener('click', () => {
-      nav.classList.toggle('show');
+  toggleButton.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+
+  // ページ内リンクをクリックしたらメニューを閉じる
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('show');
     });
-  </script>
+  });
+</script>
+
 
 </body>
 </html>
