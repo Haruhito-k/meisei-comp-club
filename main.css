@@ -155,9 +155,9 @@ a:hover {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
+    background-color: #ffffff;
     position: fixed;
-    top: 100%;
+    top: 0;
     left: 0;
     width: 100%;
     height: auto;
