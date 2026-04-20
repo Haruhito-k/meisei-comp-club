@@ -187,6 +187,17 @@ a:hover {
     position: static;
     box-shadow: none;
   }
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  body {
+    padding-top: 6em; /* ヘッダーの高さぶん余白をつける */
+  }
 
   .sp-only {
     display: none;
