@@ -182,23 +182,26 @@ a:hover {
 
 /* PC表示時のナビゲーション */
 @media screen and (min-width: 769px) {
-  .page-nav {
-    display: flex !important;
-    position: static;
-    box-shadow: none;
-  }
+  
     header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+    padding: 1.5em 1em;
   }
 
   body {
-    padding-top: 6em; /* ヘッダーの高さぶん余白をつける */
+    padding-top: 7em; /* ヘッダーの高さぶん余白をつける */
   }
 
+    .page-nav {
+    display: flex !important;
+    position: static;
+    box-shadow: none;
+  }
+  
   .sp-only {
     display: none;
   }
