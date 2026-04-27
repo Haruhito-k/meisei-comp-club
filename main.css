@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4em 1em 1em; /* 上に余白を追加してメニューと重ならないように */
+  padding: 4em 1em 1em;
   background-color: #ffffff;
   border-bottom: 1px solid #ddd;
   position: relative;
@@ -30,12 +30,12 @@ header h1 {
   text-align: left;
 }
 
-/* キャッチコピー */
+/* キャッチコピー（薄い青） */
 .catchphrase {
   font-size: 2.2em;
   text-align: center;
   margin: 2em 0 1em;
-  color: #333;
+  color: #6bb6ff;
   opacity: 0;
   animation: fadeIn 1.5s ease-out forwards;
   animation-delay: 0.3s;
@@ -51,11 +51,30 @@ section {
   max-width: 900px;
 }
 
-/* セクションタイトル */
-.section-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
+/* セクションタイトルの色 */
+#news .section-title,
+#news h3 {
+  color: #005bac;
+}
+
+#for-beginners h4 {
+  color: #007a5a;
+}
+
+#events h5 {
+  color: #8a4fff;
+}
+
+#overview h6 {
+  color: #b85c00;
+}
+
+#gallery .section-title {
+  color: #0066cc;
+}
+
+#works .section-title {
+  color: #cc3366;
 }
 
 /* ギャラリー */
@@ -85,7 +104,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ハンバーガーメニュー（常に右上に固定） */
+/* ハンバーガーメニュー */
 .menu-toggle {
   display: block;
   background: none;
@@ -109,16 +128,6 @@ a:hover {
   margin-top: 1em;
 }
 
-.page-nav a {
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.page-nav a:hover {
-  text-decoration: underline;
-}
-
 /* スマホ対応 */
 @media screen and (max-width: 768px) {
   body {
@@ -131,20 +140,9 @@ a:hover {
     align-items: flex-start;
   }
 
-  header h1 {
-    font-size: 1.4em;
-    text-align: left;
-    margin-bottom: 0.5em;
-  }
-
   section {
     padding: 2em 1em;
     margin: 2em 0;
-  }
-
-  .gallery {
-    flex-direction: column;
-    align-items: center;
   }
 
   .gallery img {
@@ -160,7 +158,6 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
     padding: 4em 0 1em;
     z-index: 1000;
   }
@@ -168,22 +165,11 @@ a:hover {
   .page-nav.show {
     display: flex;
   }
-
-  .page-nav a {
-    color:#0077cc;
-    font-size:1.2em;
-    padding:0.5em 0;
-  }
-
-  .sp-only {
-    display: inline;
-  }
 }
 
-/* PC表示時のナビゲーション */
+/* PC表示 */
 @media screen and (min-width: 769px) {
-  
-    header {
+  header {
     position: fixed;
     top: 0;
     left: 0;
@@ -193,69 +179,17 @@ a:hover {
   }
 
   body {
-    padding-top: 7em; /* ヘッダーの高さぶん余白をつける */
+    padding-top: 7em;
   }
 
-    .page-nav {
+  .page-nav {
     display: flex !important;
     position: static;
-    box-shadow: none;
-  }
-  
-  .sp-only {
-    display: none;
   }
 }
 
-/* フェードインアニメーション */
+/* フェードイン */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* スマホ専用の改行（デフォルトでは非表示） */
-.sp-only {
-  display: none;
-}
-.club-schedule img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1em auto;
-}
-/* キャッチコピー（薄い青） */
-.catchphrase {
-  color: #6bb6ff;
-}
-
-/* セクションタイトルの色 */
-#news .section-title,
-#news h3 {
-  color: #005bac;
-}
-
-#for-beginners h4 {
-  color: #007a5a;
-}
-
-#events h5 {
-  color: #8a4fff;
-}
-
-#overview h6 {
-  color: #b85c00;
-}
-
-#gallery .section-title {
-  color: #0066cc;
-}
-
-#works .section-title {
-  color: #cc3366;
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
