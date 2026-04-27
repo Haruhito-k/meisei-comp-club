@@ -229,5 +229,33 @@ a:hover {
   display: block;
   margin: 1em auto;
 }
+/* キャッチコピー（薄い青） */
+.catchphrase {
+  color: #6bb6ff;
+}
 
+/* セクションタイトルの色 */
+#news .section-title,
+#news h3 {
+  color: #005bac;
+}
 
+#for-beginners h4 {
+  color: #007a5a;
+}
+
+#events h5 {
+  color: #8a4fff;
+}
+
+#overview h6 {
+  color: #b85c00;
+}
+
+#gallery .section-title {
+  color: #0066cc;
+}
+
+#works .section-title {
+  color: #cc3366;
+}
