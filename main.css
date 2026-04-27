@@ -192,13 +192,9 @@ a:hover {
 }
 
 /* セクションタイトルを大きく＆色を固定 */
-.section-title,
-#news h3,
-#for-beginners h4,
-#events h5,
-#overview h6 {
+.section-title {
   font-size: 1.6em !important;
-  color: #005bac !important; /* 好きな色に変えられる */
+  color: #005bac !important;
 }
 
 /* 年間行事のリストがはみ出ないように */
@@ -212,6 +208,5 @@ a:hover {
 .club-schedule img {
   max-width: 100% !important;
   height: auto !important;
+  display: block !important;
 }
-
-
