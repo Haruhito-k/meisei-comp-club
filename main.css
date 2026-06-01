@@ -227,13 +227,21 @@ a:hover {
 }
 
 header {
-  transition: padding 0.3s ease, backdrop-filter 0.3s ease;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  padding: 2.5em 1em;
+  transition: 
+    padding 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 header.scrolled {
-  padding: 0.8em 1em;
-  backdrop-filter: blur(3px);
+  background: rgba(255,255,255,0.55); /* ← 透明度だけ下げる */
+  padding: 1.2em 1em; /* ← 少しだけ縮む */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
+
 
 .page-nav a {
   position: relative;
