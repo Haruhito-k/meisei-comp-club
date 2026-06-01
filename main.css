@@ -226,5 +226,36 @@ a:hover {
   display: block !important;
 }
 
+header {
+  transition: padding 0.3s ease, backdrop-filter 0.3s ease;
+}
 
+header.scrolled {
+  padding: 0.8em 1em;
+  backdrop-filter: blur(3px);
+}
 
+.page-nav a {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.page-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #005bac;
+  transition: width 0.3s ease;
+}
+
+.page-nav a:hover::after {
+  width: 100%;
+}
+
+.page-nav {
+  justify-content: center;
+  gap: 2em;
+}
