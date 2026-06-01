@@ -267,3 +267,52 @@ header.scrolled {
   justify-content: center;
   gap: 2em;
 }
+
+/* キャッチコピーの強化（全部盛り） */
+.catchphrase {
+  font-size: 2.4em;
+  text-align: center;
+  margin: 3em 0 2em;
+  color: #ffb36b;
+  letter-spacing: 0.08em; /* 文字間隔を広げる */
+  position: relative;
+  padding-bottom: 0.6em;
+
+  /* 背景の薄いグラデーション */
+  background: linear-gradient(
+    135deg,
+    rgba(255, 179, 107, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  border-radius: 12px;
+
+  /* フェードイン強化 */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: catchFade 1.4s ease-out forwards;
+}
+
+/* 下に細いライン */
+.catchphrase::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 60px;
+  height: 3px;
+  background-color: #ffb36b;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* フェードインアニメーション */
+@keyframes catchFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
