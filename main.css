@@ -61,6 +61,12 @@ section {
 #events h5,
 #overview h6 {
   font-size: 1.6em;
+  font-size: 1.8em;
+  font-weight: 600;
+  border-left: 6px solid #005bac;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  color: #005bac;
 }
 
 /* 年間行事のリストがはみ出ないように */
@@ -220,12 +226,5 @@ a:hover {
   display: block !important;
 }
 
-.section-title {
-  font-size: 1.8em;
-  font-weight: 600;
-  border-left: 6px solid #005bac;
-  padding-left: 0.5em;
-  margin-bottom: 1em;
-  color: #005bac;
-}
+
 
