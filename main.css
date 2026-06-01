@@ -210,3 +210,13 @@ a:hover {
   height: auto !important;
   display: block !important;
 }
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  border-left: 6px solid #005bac;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+  color: #005bac;
+}
+
