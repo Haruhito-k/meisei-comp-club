@@ -1,21 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>明星 コンピューター研究部｜公式サイト</title>
-  <link href="main.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet" />
+
+  <link href="main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+
   <meta name="description" content="明星コンピューター研究部の活動紹介、作品展示、イベント情報をまとめた公式サイトです。">
 </head>
 
 <body>
+
 <header>
   <h1>
-    　大阪明星学園<br style="display:inline;" />
-    　コンピューター研究部
+    大阪明星学園<br>
+    コンピューター研究部
   </h1>
-  <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+
+  <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+    ☰
+  </button>
+
   <nav class="page-nav">
     <a href="#news">近況</a>
     <a href="#for-beginners">入部を検討している人へ</a>
@@ -26,97 +35,132 @@
   </nav>
 </header>
 
+<section id="catchphrase">
+  <h2 class="catchphrase">好きを作品に</h2>
+</section>
 
-  <section id="catchphrase">
-    <h2 class="catchphrase">好きを作品に</h2>
-  </section>
+<section id="news">
+  <h3 class="section-title">近況</h3>
 
-  <section id="news">
-    <h3 class="section-title">近況</h3>
-    <p><strong>２０２６年度</strong></p>
-    <p>部員が増えました！</p>
-    <p>2026年度の学園祭に向けて作品作成やブラッシュアップに励んでいます！</p>
-  </section>
+  <p><strong>２０２６年度</strong></p>
+  <p>部員が増えました！</p>
+  <p>2026年度の学園祭に向けて作品作成やブラッシュアップに励んでいます！</p>
+</section>
 
-  <section id="for-beginners">
-    <h4 class="section-title">初心者だけどいいのかな？と思ったなら</h4>
-    <p><strong>パソコンに慣れてない人もたくさんいます</strong></p>
-    <p>プログラミングが未経験の人が入部するのは珍しくないです。</p>
-    <p>"Scratch"を用いるだけでも幅広いバリエーションのゲームが作れます</p>
-    <div>
-      <p>最初は 先輩のゲームを遊びまくります！</p>
-      <ul>
-        <li>そして自分が興味を持った作品を参考にして自分ながらの作品を作ろう！</li>
-      </ul>
-    </div>
-  </section>
+<section id="for-beginners">
+  <h4 class="section-title">初心者だけどいいのかな？と思ったなら</h4>
 
-  <section id="events">
-    <h5 class="section-title">年間行事</h5>
-    <ul>
-      <li>６月：仮入部開始</li>
-      <li>９月：本入部開始　学園祭開催</li>
-    </ul>
-  </section>
+  <p><strong>パソコンに慣れてない人もたくさんいます</strong></p>
+  <p>プログラミングが未経験の人が入部するのは珍しくないです。</p>
+  <p>"Scratch"を用いるだけでも幅広いバリエーションのゲームが作れます</p>
 
-  <section id="overview">
-    <h6 class="section-title">クラブ概要</h6>
-    <p>2026年度</p>
-    <p>顧問：廣島先生　吉良先生　茶畑先生</p>
-    <p>活動スケジュールは以下の通りです</p>
-    <div class="club-schedule">
-    　<img src="club-schedule.png" alt="コンピューター研究部の活動時間割" />
- 　 </div>
-    <p><a href="https://www.meisei.ed.jp/" target="_blank">大阪明星学園・明星中学校HP</a></p>
-    <p><a href="https://twitter.com/meisei_shinshi" target="_blank">明星中学校公式X</a></p>
-    <p><a href="https://www.instagram.com/osaka_meisei_gakuen/" target="_blank">明星中学校公式Instagram</a></p>
-  </section>
+  <div>
+    <p>最初は先輩のゲームを遊びまくります！</p>
+
+```
+<ul>
+  <li>そして自分が興味を持った作品を参考にして自分なりの作品を作ろう！</li>
+</ul>
+```
+
+  </div>
+</section>
+
+<section id="events">
+  <h5 class="section-title">年間行事</h5>
+
+  <ul>
+    <li>６月：仮入部開始</li>
+    <li>９月：本入部開始　学園祭開催</li>
+  </ul>
+</section>
+
+<section id="overview">
+  <h6 class="section-title">クラブ概要</h6>
+
+  <p>2026年度</p>
+  <p>顧問：廣島先生　吉良先生　茶畑先生</p>
+  <p>活動スケジュールは以下の通りです</p>
+
+  <div class="club-schedule">
+    <img src="club-schedule.png" alt="コンピューター研究部の活動時間割">
+  </div>
+
+  <p>
+    <a href="https://www.meisei.ed.jp/" target="_blank" rel="noopener">
+      大阪明星学園・明星中学校HP
+    </a>
+  </p>
+
+  <p>
+    <a href="https://twitter.com/meisei_shinshi" target="_blank" rel="noopener">
+      明星中学校公式X
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.instagram.com/osaka_meisei_gakuen/" target="_blank" rel="noopener">
+      明星中学校公式Instagram
+    </a>
+  </p>
+</section>
 
 <section id="gallery">
   <p class="section-title">活動ギャラリー</p>
+
   <div class="gallery">
     <p><strong>活動場所</strong></p>
     <p><strong>南館6F コンピューター教室</strong></p>
-    <img src="clubroom_map_v2.png" alt="S605 コンピューター教室の場所" />
-    <img src="activity_picture_2026_03_06.png" alt="活動の様子" />
+
+```
+<img src="clubroom_map_v2.png" alt="S605 コンピューター教室の場所">
+<img src="activity_picture_2026_03_06.png" alt="活動の様子">
+```
+
   </div>
 </section>
 
 <section id="works">
   <p class="section-title">作品</p>
+
   <p>このホームページも部員の作品です</p>
+
   <div class="gallery">
     <img src="photo_of_playing.png" alt="部員が制作した作品の例">
     <img src="photo_of_playing_2.png" alt="部員が制作した作品の例 2">
   </div>
 </section>
 
-
- <script>
+<script>
   const toggleButton = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.page-nav');
   const navLinks = document.querySelectorAll('.page-nav a');
 
+  // ハンバーガーボタン
   toggleButton.addEventListener('click', () => {
-    nav.classList.toggle('show');
+    const isOpen = nav.classList.toggle('show');
+
+    toggleButton.setAttribute('aria-expanded', isOpen);
   });
 
-  // ページ内リンクをクリックしたらメニューを閉じる
+  // メニュー項目をクリックしたらメニューを閉じる
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       nav.classList.remove('show');
+      toggleButton.setAttribute('aria-expanded', 'false');
     });
   });
 
-   window.addEventListener("scroll", () => {
-  const header = document.querySelector("header");
-  if (window.scrollY > 50) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-});
+  // スクロール時のヘッダー
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
 
+    if (window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
 </script>
 
 </body>
