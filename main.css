@@ -458,3 +458,36 @@ transform: translateY(0);
 }
 
 }
+
+/* ============================
+   作品セクション
+   元のギャラリー表示に戻す
+   ============================ */
+
+#works .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+#works .gallery img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: initial;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#works .gallery img:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
