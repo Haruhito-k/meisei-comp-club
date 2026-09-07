@@ -237,41 +237,53 @@ word-break: break-word;
 }
 
 /* ============================
-ギャラリー
-============================ */
+   活動ギャラリー
+   ============================ */
 
 .gallery {
-display: flex;
-
-flex-wrap: wrap;
-
-gap: 1em;
-
-justify-content: center;
+  display: block;
 }
 
-.gallery img {
-width: 100%;
-
-max-width: 250px;
-
-height: auto;
-
-border-radius: 12px;
-
-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-
-transition:
-transform 0.2s ease,
-box-shadow 0.2s ease;
+/* 活動場所の文字 */
+.gallery-text {
+  text-align: center;
+  margin-bottom: 1.5em;
 }
 
-.gallery img:hover {
-transform: translateY(-4px);
-
-box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+.gallery-text p {
+  margin: 0.2em 0;
 }
 
+/* 写真2枚 */
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+/* 写真 */
+.gallery-images img {
+  width: calc(50% - 0.75em);
+  max-width: 400px;
+  height: 250px;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.gallery-images img:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
 /* ============================
 活動スケジュール
 ============================ */
@@ -418,6 +430,15 @@ scroll-margin-top: 100px;
 .gallery img {
 max-width: 90%;
 }
+   .gallery-images {
+    flex-direction: column;
+  }
+
+  .gallery-images img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 }
 
 /* ============================
