@@ -491,3 +491,35 @@ transform: translateY(0);
 
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
 }
+
+/* ============================
+   作品セクションを元に戻す
+   ============================ */
+
+#works .gallery {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 1em !important;
+}
+
+#works .gallery img {
+  width: 100% !important;
+  max-width: 250px !important;
+  height: auto !important;
+  object-fit: initial !important;
+
+  border-radius: 12px !important;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
+}
+
+#works .gallery img:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2) !important;
+}
